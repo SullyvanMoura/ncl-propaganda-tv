@@ -55,7 +55,7 @@
 	</head>
 	<body id="myBodyID">
 		<context id="ctx0">
-			<media descriptor="tela_completa" id="propaganda_tekpix" src="C:/Users/SULLY/Desktop/NCL/ncl-propaganda-tv/src/videos/propaganda_tekpix.mp4">
+			<media descriptor="tela_completa" id="propaganda_tekpix" src="src/videos/propaganda_tekpix.mp4">
 			</media>
 			<port component="propaganda_tekpix" id="p0">
 			</port>
