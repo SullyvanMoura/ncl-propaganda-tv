@@ -16,11 +16,13 @@
 				</region>
 				<region height="20.21%" id="region5" left="6.44%" top="9.58%" width="12.88%" zIndex="3">
 				</region>
-				<region height="90.83%" id="region6" left="29.04%" top="6.04%" width="47.19%" zIndex="4">
+				<region height="45.95%" id="region6" left="26.23%" top="27.29%" width="51.64%" zIndex="4">
 				</region>
-				<region height="12.71%" id="region7" left="78.57%" top="83.12%" width="19.09%" zIndex="5">
+				<region bottom="4.17%" height="12.71%" id="region7" left="79.74%" right="2.34%" top="83.12%" width="17.92%" zIndex="5">
 				</region>
-				<region height="26.88%" id="region8" left="77.17%" top="35.83%" width="21.43%" zIndex="6">
+				<region height="100.00%" id="region9" left="26.23%" top="0.00%" width="51.76%" zIndex="7">
+					<region height="98.29%" id="region10" left="0.00%" top="0.88%" width="100.00%" zIndex="7">
+					</region>
 				</region>
 			</region>
 		</regionBase>
@@ -39,46 +41,24 @@
 			</descriptor>
 			<descriptor id="descrito_titulo" region="region5">
 			</descriptor>
-			<descriptor id="descritor_about" region="region6">
+			<descriptor id="descritor_about" region="region10">
 			</descriptor>
 			<descriptor id="descritor_logo" region="region7">
 			</descriptor>
-			<descriptor id="descritor_imagens_tekpix" region="region6">
+			<descriptor id="descritor_imagens_tekpix" region="region9">
 			</descriptor>
 			<descriptor id="descritor_adquira_html" region="region6">
 			</descriptor>
 			<descriptor focusIndex="5" id="descritor_return" moveLeft="2" region="region1">
 			</descriptor>
-			<descriptor id="desc_teste" region="region8">
-			</descriptor>
 		</descriptorBase>
 	</head>
 	<body id="myBodyID">
 		<context id="ctx0">
-			<link id="l20" xconnector="conn#onBeginStart">
-				<bind component="info" role="start">
-				</bind>
-				<bind component="propaganda_tekpix" role="onBegin">
-				</bind>
-			</link>
-			<media descriptor="layout_info" id="info" src="C:/Users/SULLY/Desktop/NCL/ncl-propaganda-tv/src/layout/info.png">
-			</media>
 			<media descriptor="tela_completa" id="propaganda_tekpix" src="C:/Users/SULLY/Desktop/NCL/ncl-propaganda-tv/src/videos/propaganda_tekpix.mp4">
 			</media>
 			<port component="propaganda_tekpix" id="p0">
 			</port>
-			<link id="l2" xconnector="conn#onEndStop">
-				<bind component="propaganda_tekpix" role="onEnd">
-				</bind>
-				<bind component="info" role="stop">
-				</bind>
-			</link>
-			<link id="l1" xconnector="conn#onSelectionStop">
-				<bind component="info" role="onSelection">
-				</bind>
-				<bind component="propaganda_tekpix" role="stop">
-				</bind>
-			</link>
 		</context>
 		<context id="ctx1">
 			<port component="fundo" id="p3">
@@ -99,8 +79,6 @@
 			</media>
 			<media descriptor="descritor_about" id="about" src="src/texts/about.html">
 			</media>
-			<media descriptor="descritor_return" id="return" src="C:/Users/SULLY/Desktop/NCL/ncl-propaganda-tv/src/images/return.png">
-			</media>
 			<link id="l0" xconnector="conn#onBeginStart">
 				<bind component="fundo" role="onBegin">
 				</bind>
@@ -113,12 +91,6 @@
 				<bind component="sobre" role="start">
 				</bind>
 			</link>
-			<link id="l5" xconnector="conn#onBeginStart">
-				<bind component="fundo" role="onBegin">
-				</bind>
-				<bind component="return" role="start">
-				</bind>
-			</link>
 			<link id="l6" xconnector="conn#onBeginStart">
 				<bind component="fundo" role="onBegin">
 				</bind>
@@ -129,30 +101,6 @@
 				<bind component="fundo" role="onBegin">
 				</bind>
 				<bind component="imagens" role="start">
-				</bind>
-			</link>
-			<link id="l8" xconnector="conn#onSelectionStart">
-				<bind component="sobre" role="onSelection">
-				</bind>
-				<bind component="about" role="start">
-				</bind>
-			</link>
-			<link id="l9" xconnector="conn#onSelectionStart">
-				<bind component="imagens" role="onSelection">
-				</bind>
-				<bind component="tekpix_imagens" role="start">
-				</bind>
-			</link>
-			<link id="l10" xconnector="conn#onSelectionStart">
-				<bind component="adquira" role="onSelection">
-				</bind>
-				<bind component="adquiraHtml" role="start">
-				</bind>
-			</link>
-			<link id="l11" xconnector="conn#onSelectionStop">
-				<bind component="sobre" role="onSelection">
-				</bind>
-				<bind component="tekpix_imagens" role="stop">
 				</bind>
 			</link>
 			<link id="l12" xconnector="conn#onSelectionStop">
@@ -185,73 +133,103 @@
 				<bind component="tekpix_imagens" role="stop">
 				</bind>
 			</link>
-			<link id="l17" xconnector="conn#onSelectionStop">
-				<bind component="return" role="onSelection">
+			<media descriptor="descritor_logo" id="logo" src="C:/Users/SULLY/Desktop/NCL/ncl-propaganda-tv/src/images/logo.png">
+			</media>
+			<link id="l22" xconnector="conn#onBeginStart">
+				<bind component="fundo" role="onBegin">
 				</bind>
-				<bind component="fundo" role="stop">
-				</bind>
-			</link>
-			<link id="l18" xconnector="conn#onSelectionStop">
-				<bind component="return" role="onSelection">
-				</bind>
-				<bind component="adquira" role="stop">
+				<bind component="logo" role="start">
 				</bind>
 			</link>
-			<link id="l19" xconnector="conn#onSelectionStop">
-				<bind component="return" role="onSelection">
+			<link id="l8" xconnector="conn#onSelectionStart_delay">
+				<bind component="sobre" role="onSelection">
 				</bind>
-				<bind component="imagens" role="stop">
-				</bind>
-			</link>
-			<link id="l21" xconnector="conn#onSelectionStop">
-				<bind component="return" role="onSelection">
-				</bind>
-				<bind component="adquiraHtml" role="stop">
+				<bind component="about" role="start">
 				</bind>
 			</link>
-			<link id="l22" xconnector="conn#onSelectionStop">
-				<bind component="return" role="onSelection">
+			<link id="l9" xconnector="conn#onSelectionStart_delay">
+				<bind component="imagens" role="onSelection">
 				</bind>
-				<bind component="titulo" role="stop">
+				<bind component="tekpix_imagens" role="start">
 				</bind>
 			</link>
-			<link id="l23" xconnector="conn#onSelectionStop">
-				<bind component="return" role="onSelection">
+			<link id="l10" xconnector="conn#onSelectionStart_delay">
+				<bind component="adquira" role="onSelection">
+				</bind>
+				<bind component="adquiraHtml" role="start">
+				</bind>
+			</link>
+			<link id="l11" xconnector="conn#onSelectionStop">
+				<bind component="sobre" role="onSelection">
 				</bind>
 				<bind component="tekpix_imagens" role="stop">
-				</bind>
-			</link>
-			<link id="l24" xconnector="conn#onSelectionStop">
-				<bind component="return" role="onSelection">
-				</bind>
-				<bind component="sobre" role="stop">
-				</bind>
-			</link>
-			<link id="l25" xconnector="conn#onSelectionStop">
-				<bind component="return" role="onSelection">
-				</bind>
-				<bind component="about" role="stop">
-				</bind>
-			</link>
-			<link id="l26" xconnector="conn#onEndStop">
-				<bind component="fundo" role="onEnd">
-				</bind>
-				<bind component="return" role="stop">
 				</bind>
 			</link>
 		</context>
 		<port component="ctx0" id="p1">
 		</port>
-		<link id="l3" xconnector="conn#onEndStart">
+		<media descriptor="layout_info" id="info" src="C:/Users/SULLY/Desktop/NCL/ncl-propaganda-tv/src/layout/info.png">
+		</media>
+		<link id="l1" xconnector="conn#onBeginStart">
+			<bind component="ctx0" role="onBegin">
+			</bind>
+			<bind component="info" role="start">
+			</bind>
+		</link>
+		<link id="l2" xconnector="conn#onEndStop">
 			<bind component="ctx0" role="onEnd">
+			</bind>
+			<bind component="info" role="stop">
+			</bind>
+		</link>
+		<link id="l32" xconnector="conn#onSelectionStart">
+			<bind component="info" role="onSelection">
 			</bind>
 			<bind component="ctx1" role="start">
 			</bind>
 		</link>
-		<link id="l27" xconnector="conn#onEndStart">
+		<media descriptor="descritor_return" id="return" src="C:/Users/SULLY/Desktop/NCL/ncl-propaganda-tv/src/images/return.png">
+		</media>
+		<link id="l5" xconnector="conn#onBeginStart">
+			<bind component="ctx1" role="onBegin">
+			</bind>
+			<bind component="return" role="start">
+			</bind>
+		</link>
+		<link id="l17" xconnector="conn#onEndStop">
 			<bind component="ctx1" role="onEnd">
 			</bind>
-			<bind component="ctx0" role="start">
+			<bind component="return" role="stop">
+			</bind>
+		</link>
+		<link id="l18" xconnector="conn#onSelectionStop">
+			<bind component="return" role="onSelection">
+			</bind>
+			<bind component="ctx1" role="stop">
+			</bind>
+		</link>
+		<link id="l19" xconnector="conn#onSelectionResume">
+			<bind component="return" role="onSelection">
+			</bind>
+			<bind component="ctx0" role="resume">
+			</bind>
+		</link>
+		<link id="l3" xconnector="conn#onBeginStop">
+			<bind component="ctx1" role="onBegin">
+			</bind>
+			<bind component="info" role="stop">
+			</bind>
+		</link>
+		<link id="l20" xconnector="conn#onSelectionPause">
+			<bind component="info" role="onSelection">
+			</bind>
+			<bind component="ctx0" role="pause">
+			</bind>
+		</link>
+		<link id="l21" xconnector="conn#onSelectionStart">
+			<bind component="return" role="onSelection">
+			</bind>
+			<bind component="info" role="start">
 			</bind>
 		</link>
 	</body>
