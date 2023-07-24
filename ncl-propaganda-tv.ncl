@@ -63,21 +63,21 @@
 		<context id="ctx1">
 			<port component="fundo" id="p3">
 			</port>
-			<media descriptor="descritor_fundo" id="fundo" src="./src/images/fundo.jpg">
+			<media descriptor="descritor_fundo" id="fundo" src="src/images/fundo.jpg">
 			</media>
-			<media descriptor="descritor_sobre" id="sobre" src="./src/images/sobre.png">
+			<media descriptor="descritor_sobre" id="sobre" src="src/images/sobre.png">
 			</media>
-			<media descriptor="descrito_imagens" id="imagens" src="./src/images/imagens.png">
+			<media descriptor="descrito_imagens" id="imagens" src="src/images/imagens.png">
 			</media>
-			<media descriptor="descritor_adquira" id="adquira" src="./src/images/adquira.png">
+			<media descriptor="descritor_adquira" id="adquira" src="src/images/adquira.png">
 			</media>
-			<media descriptor="descrito_titulo" id="titulo" src="./src/images/titulo.png">
+			<media descriptor="descrito_titulo" id="titulo" src="src/images/titulo.png">
 			</media>
-			<media descriptor="descritor_imagens_tekpix" id="tekpix_imagens" src="./src/images/tekpix_imagens.png">
+			<media descriptor="descritor_imagens_tekpix" id="tekpix_imagens" src="src/images/tekpix_imagens.png">
 			</media>
-			<media descriptor="descritor_adquira_html" id="adquiraHtml" src="./src/texts/adquiraHtml.html">
+			<media descriptor="descritor_adquira_html" id="adquiraHtml" src="src/texts/adquiraHtml.html">
 			</media>
-			<media descriptor="descritor_about" id="about" src="./src/texts/about.html">
+			<media descriptor="descritor_about" id="about" src="src/texts/about.html">
 			</media>
 			<link id="l0" xconnector="conn#onBeginStart">
 				<bind component="fundo" role="onBegin">
@@ -133,7 +133,7 @@
 				<bind component="tekpix_imagens" role="stop">
 				</bind>
 			</link>
-			<media descriptor="descritor_logo" id="logo" src="./src/images/logo.png">
+			<media descriptor="descritor_logo" id="logo" src="src/images/logo.png">
 			</media>
 			<link id="l22" xconnector="conn#onBeginStart">
 				<bind component="fundo" role="onBegin">
@@ -168,7 +168,7 @@
 		</context>
 		<port component="ctx0" id="p1">
 		</port>
-		<media descriptor="layout_info" id="info" src="./src/layout/info.png">
+		<media descriptor="layout_info" id="info" src="src/layout/info.png">
 		</media>
 		<link id="l1" xconnector="conn#onBeginStart">
 			<bind component="ctx0" role="onBegin">
@@ -188,7 +188,7 @@
 			<bind component="ctx1" role="start">
 			</bind>
 		</link>
-		<media descriptor="descritor_return" id="return" src="./src/images/return.png">
+		<media descriptor="descritor_return" id="return" src="src/images/return.png">
 		</media>
 		<link id="l5" xconnector="conn#onBeginStart">
 			<bind component="ctx1" role="onBegin">
